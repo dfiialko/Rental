@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  width: 90%;
 }
 
 .App-logo {
@@ -35,4 +36,50 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  clear: both;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+label {
+  width: 100px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+input {
+  width: 200px;
+}
+
+#rentalCount {
+  float: left;
+  width: 50%;
+}
+
+#propertyValueComponent {
+  float: left;
+  width: 50%;
+}
+
+#incomeField {
+  width: 100%;
+}
+
+#propPhoto{
+  width: 50%;
+  float: left;
+}
+
+#textArea {
+  width: 50%;
+  float: left;
 }
