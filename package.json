@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@jridgewell/sourcemap-codec": "^1.4.14",
+    "@material-ui/core": "^4.12.4",
     "@rollup/plugin-terser": "^0.4.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
