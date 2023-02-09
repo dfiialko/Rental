@@ -49,12 +49,30 @@ const monthlyExpenseReducer = (state = 0, action) => {
         payload: value,
     };
     };
+
+    const updateInputText = (value) => {
+      return {
+          type: "SET_INPUT_TEXT",
+          payload: value,
+      };
+    };
+
+    const inputTextReducer = (state = '', action) => {
+    switch (action.type) {
+        case 'SET_INPUT_TEXT':
+            return action.payload;
+        default:
+            return state;
+    }
+};
   
 const rootReducer = combineReducers({
   totalIncome: totalIncomeReducer,
   monthlyPayment: monthlyExpenseReducer,
   propertyValue: propertyValueReducer,
   address: addressReducer,
+  inputText: inputTextReducer,
+  updateInputText,
   updateAddress,
   updatePropertyValue
 });
