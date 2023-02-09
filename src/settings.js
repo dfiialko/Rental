@@ -1,5 +1,5 @@
 export const settings = {
-    googleApiKey: '',
+    googleApiKey: 'AIzaSyAfVDC899ncxeku0A5vVAB094RdrVskdsc',
     city: 'Edmonton',
     insuranceDefaultRate: 70,
     propertyManagementDefaultRate: 10,
