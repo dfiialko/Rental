@@ -6,7 +6,8 @@ import ExpenseInputs from './Expenses';
 import { createStore } from 'redux';
 import { Provider, connect } from 'react-redux';
 import rootReducer from './reducer';
-import { Tabs, Tab } from '@material-ui/core';
+import { Tabs, Tab, Button,IconButton } from '@material-ui/core';
+import CloseIcon from '@material-ui/icons/Close';
 import { settings } from './settings';
 
 const googleApiKey = settings.googleApiKey;
@@ -53,7 +54,9 @@ const ReduxApp = () => {
           <Tab key={index} label={
             <React.Fragment>
               {store.getState().address.replace("Edmonton","") || "undefined"}
-              <button onClick={() => closeTab(index)}>Close</button>
+              <IconButton onClick={() => closeTab(index)}>
+                <CloseIcon />
+              </IconButton>
             </React.Fragment>
           } />
         ))}
