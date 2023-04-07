@@ -1,0 +1,21 @@
+.input-row{
+  width: 50%;
+}
+#rental-income-total{
+  font-weight: bold;
+}
+.map-google{
+  display: block;
+  height: 300px;
+  max-width: auto;
+}
+#prop-photo, #property-image{
+  overflow: hidden;
+  display: block;
+  height: 300px;
+  max-width: auto;
+}
+#calculate-expense-total{
+  width: 50%!important;
+  margin-top: 10px;
+}
